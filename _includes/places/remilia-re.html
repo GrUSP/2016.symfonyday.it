@@ -1,0 +1,75 @@
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+    function initialize_map() {
+        var mapOptions = {
+            zoom: 15,
+            center: new google.maps.LatLng(44.722134, 10.644432),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById('map_canvas'),
+            mapOptions);
+
+        var remilia = new google.maps.Marker({
+            position: new google.maps.LatLng(44.722134, 10.644432),
+            map: map,
+            icon: 'img/marker_i3p.png',
+            title:"Remilia Hotel"
+        });
+    }
+</script>
+
+<a name="location"></a>
+<section class="alpha_32">
+	<div class="container group">
+		<h3 class="column_12">Location</h3>
+		<div class="column_6 map">
+			<div id="map_canvas"></div>
+		</div>
+
+		<div class="column_6 legend right">
+			<dl>
+			  <dt class="event_location"><span><strong>Event location</strong></span></dt>
+			    <dd  class="event_location">
+                    <a href="http://www.remiliareggioemilia.com/">Remilia Hotel</a><br/>
+                    Via Danubio 7, <br/>
+                    Reggio Emilia, Italy
+				</dd>					
+			</dl>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="column_3">
+			<h5>In auto</h5>
+
+            <p>
+                L'Hotel Remilia si trova a solo 1,8 Km dall'uscita di Reggio Emilia dell'autostrada A1
+                (<a href="https://goo.gl/maps/jjXe0">percorso</a>). L'hotel possiede un parcheggio esterno gratuito da oltre 200 posti auto.
+            </p>
+		</div>
+
+		<div class="column_3">
+			<h5>In treno (AV)</h5>
+			<p>
+                L'Hotel Remilia si trova a 14 minuti a piedi dalla stazione alta velocità di Reggio Emilia Mediopadana
+                (<a href="https://goo.gl/maps/3otfL">percorso</a>). In alternativa, se non avete voglia di camminare,
+                potete prendere l'autobus n. 5 verso "Rivalta - Peep" e scendere a "Mancasale - Chiesa" (<a
+                href="https://goo.gl/maps/DnjyK">percorso</a>).
+			</p>
+		</div>
+		<div class="column_3">
+			<h5>In treno</h5>
+			<p>
+                Dalla stazione centrale FS di Reggio Emilia è possibile raggiungere l'Hotel Remilia prendendo l'autobus
+                n.5 verso "Mancasale - Fiera" scendendo a "Mancasale - Chiesa"
+                (<a href="https://goo.gl/maps/BjOCR">percorso</a>).
+			</p>
+		</div>
+		
+	</div>
+
+
+	<div class="clear"></div>
+</div>
+<div class="separator"></div>
+</section>
