@@ -2,20 +2,20 @@
 layout: sfday
 title: Symfony Day
 ttl: Symfony Day
-conf_data: "Reggio Emilia, 9 ottobre 2015"
-base_url: http://2015.symfonyday.it
+conf_data: "Roma, 28 ottobre 2015"
+base_url: http://2016.symfonyday.it
 cfp: true
 cfp_url: https://docs.google.com/a/grusp.org/forms/d/13Y0yD6SC9j0lcBXhkF_ld5NDbp7_uIXd6TX1VEhcPJw/viewform
 speakers: false
 cfs: true
-where: remilia-re
-tickets: true
+where: cinecitta
+tickets: false
 workshop: false
 tickets_url: http://eventbrite.com/tickets-external?eid=17119984334&ref=etckt
 ---
 
-{% include section-newsletter.html %}	
-{% include section-contents.html %}	
+{% include section-newsletter.html %}
+{% include section-contents.html %}
 
 {% if page.cfp %} {% include section-cfp.html %} {% endif %}
 {% if page.tickets %} {% include section-tickets.html %} {% endif %}
@@ -24,6 +24,6 @@ tickets_url: http://eventbrite.com/tickets-external?eid=17119984334&ref=etckt
 
 {% capture place %}{{'places/'}}{{page.where}}{{'.html'}}{% endcapture %}
 
-{% include {{place}} %}	
+{% include {{place}} %}
 
 {% include section-sponsors.html %}
