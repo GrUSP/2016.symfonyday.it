@@ -1,4 +1,4 @@
-oneday-conf-template
-====================
+2016.symfonyday.it site
+=======================
 
-base repo for one day conferences
+Sito statico bundolizzato con [jekyll](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)
