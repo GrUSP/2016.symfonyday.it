@@ -1,27 +1,38 @@
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
-function initialize_map() {
-}
+    function initialize_map() {
+        var mapOptions = {
+                    zoom: 13,
+                    center: new google.maps.LatLng(41.8984724, 12.4957668),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                },
+                map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+    }
 </script>
 <a name="location"></a>
 <section class="alpha_32">
-	<div class="container group">
-		<h3 class="column_12">Location</h3>
-		<div class="column_6 map">
-			<div id="map_canvas"></div>
-		</div>
+    <div class="container group">
+        <h3 class="column_12">Location</h3>
+        <div class="column_6 map">
+            <div id="map_canvas"></div>
+        </div>
 
-		<div class="column_6 legend right">
-			<dl>
-			  <dt class="event_location"><span><strong>in via di definizione</strong></span></dt>
-		    <dd  class="event_location">
-		    	in via di definizione
-			</dd>
-			</dl>
-		</div>
-	</div>
-
-
-	<div class="clear"></div>
-</div>
-<div class="separator"></div>
+        <div class="column_6 legend right">
+            <dl>
+                <dt class="event_location">
+                    <span>
+                        <strong>in via di definizione</strong>
+                    </span>
+                </dt>
+                <dd class="event_location">
+                    <p>
+                        Iscriviti alla <a href="#newsletter">newsletter</a> per sapere quale sarà la sede prescelta
+                    </p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="clear"></div>
+    </div>
+    <div class="separator"></div>
 </section>
