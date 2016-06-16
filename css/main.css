@@ -358,6 +358,7 @@ em.plus {
     width: 100%;
     max-width: 220px;
     height: auto;
+    padding-right: 15%;
 }
 
 .event_name {
