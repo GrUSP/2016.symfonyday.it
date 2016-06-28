@@ -102,7 +102,6 @@ h4 a {
 }
 
 .supporter h4, h4.deco {
-    background: transparent url(../img/bg_h4_line.png) no-repeat center center;
     margin-bottom: 20px;
 }
 
@@ -372,7 +371,7 @@ em.plus {
 
 .share h4 {
     line-height: 1em;
-    margin-bottom: -5px;
+    margin-bottom: -10px;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, .3);
 }
 
@@ -713,11 +712,6 @@ a:hover.slides {
     height: auto;
 }
 
-.supporter h4 {
-    font-size: 24px;
-
-}
-
 .supporter .gold {
     color: #DBB541;
 }
@@ -731,7 +725,7 @@ a:hover.slides {
 }
 
 .supporter .platinum {
-    color: #BFBFBF;
+    color: #000;
 }
 
 .supporter li {
@@ -766,6 +760,43 @@ a:hover.slides {
 
 .bronze_supporter .banner {
     width: 13.5%;
+}
+
+h4.line {
+    position: relative;
+    overflow: hidden;
+}
+
+h4.line span {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    position: relative;
+    padding: 10px 10px;
+}
+
+h4.line span:before, h4.line span:after {
+    content: '';
+    display: block;
+    width: 1000px;
+    position: absolute;
+    top: 1.3em;
+    border-top: 1px solid #ADB0B6;
+}
+
+h4.line span:before {
+    right: 100%;
+}
+
+h4.line span:after {
+    left: 100%;
+}
+
+.sponsors {
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* footer */
