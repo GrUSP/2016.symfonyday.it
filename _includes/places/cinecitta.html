@@ -2,17 +2,17 @@
 <script>
     function initialize_map() {
         var mapOptions = {
-                    zoom: 15,
-                    center: new google.maps.LatLng(41.89861, 12.50365),
+                    zoom: 13,
+                    center: new google.maps.LatLng(41.8564436,12.5768001),
                     scrollwheel: false,
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 },
                 map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions),
-                Enlabs = new google.maps.Marker({
-                    position: new google.maps.LatLng(41.89861, 12.50365),
+                cinecitta = new google.maps.Marker({
+                    position: new google.maps.LatLng(41.8564436,12.5768001),
                     map: map,
-                    icon: 'img/marker_enlabs.png',
-                    title: "Luiss-Enlabs"
+                    icon: 'img/marker_i3p.png',
+                    title: "Cinecittà Studios"
                 });
     }
 </script>
@@ -21,7 +21,8 @@
 <section class="alpha_32">
     <div class="container group">
 
-        <h3 class="column_12">Location</h3>
+        <h3 class="center">Location</h3>
+
         <div class="column_6 map">
             <div id="map_canvas"></div>
         </div>
@@ -30,9 +31,9 @@
             <dl>
                 <dt class="event_location"><span><strong>Event location</strong></span></dt>
                 <dd class="event_location">
-                    <strong>c/o <a href="http://www.enlabs.it">Luiss-Enlabs</a></strong>
-                    Via Giovanni Giolitti 34<br/>
-                    00185 Rome , Italy
+                    <strong>c/o <a href="http://www.enlabs.it">Cinecittà Studios</a></strong>
+                    Via Raimondo Scintu 90<br/>
+                    00173 Rome, Italy
                 </dd>
             </dl>
         </div>
